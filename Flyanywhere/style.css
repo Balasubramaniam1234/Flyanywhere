@@ -1,0 +1,271 @@
+/*Global styles*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+    font-size: 2.6rem;
+}
+li,button, label, input, p{
+    font-size: 2rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4,h5{
+    font-size: 2.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+button {
+    padding: 0.5rem 1.2rem;
+    background: #ff0080;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+button:hover{
+    background: #440022;
+}
+/* Nav with hero */
+
+.main-header {
+    background: #0e2022;
+    color: white;
+}
+nav{
+    min-height: 10vh;
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex: 1 1 40rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 500;
+}
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),url("/icons/action-blur-car-child-386009.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.hero h2{
+    padding: 4rem;
+}
+
+/* locations section*/
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1 ), transparent), url("/icons/view-of-cityscape-against-sky-313032.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.locations-head{
+    width: 90%;
+    margin: auto;
+}
+.locations-head h2{
+    text-decoration: solid;
+    padding: 10rem 10rem;
+    text-decoration: underline;
+}
+
+@keyframes Animation {
+    0% {
+     background: lightblue;   
+    }
+    25% {
+        background: rgb(23, 62, 75);   
+       }
+    100% {
+        background: rgb(145, 30, 129);   
+    }
+}
+/*Products section*/
+.products-head{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.products-head h3{
+    padding: 1rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+
+.card h4{
+    padding: 1rem;
+}
+
+.card p{
+    padding: 1rem;
+}
+
+.card-icon{
+    background: #343c44;
+}
+
+/* Contact Section */
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5 ), transparent), url(/icons/contact-mountain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper{
+    background: rgba(19, 28, 39, 0.7);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+.name-form, .email-form{
+    padding: 2rem;
+    text-align: center;
+}
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+
+
+  
+  /* Footer Section */
+  
+  footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+  }
+  .footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+  }
+  footer h5 {
+    margin: auto;
+    flex: 1 1 40rem;
+  }
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Button focus to make website accessible */
+  
+  button:focus {
+    background: #2c3f57;
+    outline-style: solid;
+    outline-color: cornflowerblue;
+  }
+  
+
+/* Media query */
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 45%; 
+    }
+        nav {
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+    .form-wrapper {
+        width: 100%;
+      }
+footer {
+    text-align: center;
+}
+footer h5 {
+    padding-bottom: 3rem;
+}
+}
